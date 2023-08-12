@@ -22,8 +22,7 @@ const workHistory = [
 
 function App() {
   const listItems = workHistory.map((work)=>{
-    const listItem = `${work.title} - ${work.description}`;
-    return <li>{listItem}</li>
+    return <li><strong>{work.title} </strong> - <i>{work.description}</i></li>
   });
   return (
     <div>
